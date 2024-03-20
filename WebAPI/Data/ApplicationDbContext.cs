@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WebAPI.Models;
 
-namespace WebbAPI.Data // Again, replace with your actual namespace
+namespace WebbAPI.Data 
 {
     public class ApplicationDbContext : DbContext
     {
