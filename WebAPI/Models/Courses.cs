@@ -13,9 +13,8 @@
         public string durationImage { get; set; } // Add this property
         public string satisfactionImage { get; set; } // Add this property
         public bool IsBestSeller { get; set; } // Add this property
-
-
-
-
+        public bool IsOnSale { get; set; } // Indicates if the course is on sale
+        public string OriginalPrice { get; set; } // The original price before the sale
+        public string SalePrice { get; set; } // The sale price
     }
 }

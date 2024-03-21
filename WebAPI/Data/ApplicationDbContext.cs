@@ -31,7 +31,10 @@ namespace WebbAPI.Data
                     SImage = "https://localhost:7279/images/S.svg", 
                     durationImage = "https://localhost:7279/images/bx-time-five.svg", 
                     satisfactionImage = "https://localhost:7279/images/bx-like.svg",
-                    IsBestSeller = true // Set this to true for best seller courses
+                    IsBestSeller = true,
+                    IsOnSale = false,
+                    OriginalPrice = "$12.50", // Even if not on sale, provide a value.
+                    SalePrice = "$12.50"  // Same as above.
 
 
                 },
@@ -46,7 +49,10 @@ namespace WebbAPI.Data
                     ImageUrl = "https://localhost:7279/images/htmlcss.svg",
                     SImage = "https://localhost:7279/images/S.svg",
                     durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                    satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                    satisfactionImage = "https://localhost:7279/images/bx-like.svg",
+                    IsOnSale = false,
+                    OriginalPrice = "$15.99", // Even if not on sale, provide a value.
+                    SalePrice = "$15.99"  // Same as above.
 
 
 
@@ -62,7 +68,11 @@ namespace WebbAPI.Data
                     ImageUrl = "https://localhost:7279/images/thecomplete.svg",
                     SImage = "https://localhost:7279/images/S.svg",
                     durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                    satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                    satisfactionImage = "https://localhost:7279/images/bx-like.svg",
+                    IsOnSale = true,
+                    OriginalPrice = "$44.99",
+                    SalePrice = "$9.99",
+
 
 
 
@@ -78,7 +88,12 @@ namespace WebbAPI.Data
                     ImageUrl = "https://localhost:7279/images/iosswift.svg",
                     SImage = "https://localhost:7279/images/S.svg",
                     durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                    satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                    satisfactionImage = "https://localhost:7279/images/bx-like.svg",
+                    IsOnSale = false,
+                    OriginalPrice = "$15.99", // Even if not on sale, provide a value.
+                    SalePrice = "$15.99"  // Same as above.
+
+
 
 
 
@@ -95,7 +110,10 @@ namespace WebbAPI.Data
                     SImage = "https://localhost:7279/images/S.svg",
                     durationImage = "https://localhost:7279/images/bx-time-five.svg",
                     satisfactionImage = "https://localhost:7279/images/bx-like.svg",
-                    IsBestSeller = true // Set this to true for best seller courses
+                    IsBestSeller = true,
+                    IsOnSale = false,
+                    OriginalPrice = "$11.20", // Even if not on sale, provide a value.
+                    SalePrice = "$12.20"  // Same as above.
 
 
 
@@ -112,7 +130,10 @@ namespace WebbAPI.Data
                     ImageUrl = "https://localhost:7279/images/creativecss.svg",
                     SImage = "https://localhost:7279/images/S.svg",
                     durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                    satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                    satisfactionImage = "https://localhost:7279/images/bx-like.svg",
+                    IsOnSale = false,
+                    OriginalPrice = "$10.50", // Even if not on sale, provide a value.
+                    SalePrice = "$10.50"  // Same as above.
 
 
 
@@ -128,7 +149,12 @@ namespace WebbAPI.Data
                             ImageUrl = "https://localhost:7279/images/blender.svg",
                             SImage = "https://localhost:7279/images/S.svg",
                             durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                            satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                            satisfactionImage = "https://localhost:7279/images/bx-like.svg",
+                            IsOnSale = false,
+                            OriginalPrice = "$18.99", // Even if not on sale, provide a value.
+                            SalePrice = "$18.99"  // Same as above.
+
+
 
 
 
@@ -144,7 +170,10 @@ namespace WebbAPI.Data
                     ImageUrl = "https://localhost:7279/images/ultimate.svg",
                     SImage = "https://localhost:7279/images/S.svg",
                     durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                    satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                    satisfactionImage = "https://localhost:7279/images/bx-like.svg",
+                    IsOnSale = true,
+                    OriginalPrice = "$44.99",
+                    SalePrice = "$12.99",
 
 
 
@@ -160,7 +189,11 @@ namespace WebbAPI.Data
                     ImageUrl = "https://localhost:7044/images/jmeter.svg",
                     SImage = "https://localhost:7279/images/S.svg",
                     durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                    satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                    satisfactionImage = "https://localhost:7279/images/bx-like.svg",
+                    IsOnSale = false,
+                    OriginalPrice = "$14.50", // Even if not on sale, provide a value.
+                    SalePrice = "$14.50"  // Same as above.
+
 
 
 
