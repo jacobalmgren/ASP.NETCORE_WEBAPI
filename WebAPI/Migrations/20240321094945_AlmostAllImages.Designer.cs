@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebbAPI.Data;
 
@@ -10,9 +11,11 @@ using WebbAPI.Data;
 namespace WebAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240321094945_AlmostAllImages")]
+    partial class AlmostAllImages
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,9 +43,6 @@ namespace WebAPI.Migrations
                     b.Property<string>("Instructor")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsBestSeller")
-                        .HasColumnType("bit");
 
                     b.Property<string>("Price")
                         .IsRequired()
@@ -79,7 +79,6 @@ namespace WebAPI.Migrations
                             Duration = "220 hours",
                             ImageUrl = "https://localhost:7279/images/fullstack.svg",
                             Instructor = "Robert Fox",
-                            IsBestSeller = true,
                             Price = "$12.50",
                             SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "94% (4.2K)",
@@ -93,7 +92,6 @@ namespace WebAPI.Migrations
                             Duration = "160 hours",
                             ImageUrl = "https://localhost:7279/images/htmlcss.svg",
                             Instructor = "Jenny Wilson & Marvin McKinney",
-                            IsBestSeller = false,
                             Price = "$15.99",
                             SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "92% (3.1K)",
@@ -107,7 +105,6 @@ namespace WebAPI.Migrations
                             Duration = "100 hours",
                             ImageUrl = "https://localhost:7279/images/thecomplete.svg",
                             Instructor = "Albert Flores",
-                            IsBestSeller = false,
                             Price = "$9.99",
                             SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "98% (2.7K)",
@@ -121,7 +118,6 @@ namespace WebAPI.Migrations
                             Duration = "160 hours",
                             ImageUrl = "https://localhost:7279/images/iosswift.svg",
                             Instructor = "Marvin McKinney",
-                            IsBestSeller = false,
                             Price = "$15.99",
                             SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "92% (3.1K)",
@@ -135,7 +131,6 @@ namespace WebAPI.Migrations
                             Duration = "160 hours",
                             ImageUrl = "https://localhost:7279/images/datascience.svg",
                             Instructor = "Esther Howard",
-                            IsBestSeller = true,
                             Price = "$11.20",
                             SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "92% (3.1K)",
@@ -149,7 +144,6 @@ namespace WebAPI.Migrations
                             Duration = "220 hours",
                             ImageUrl = "https://localhost:7279/images/creativecss.svg",
                             Instructor = "Robert Fox",
-                            IsBestSeller = false,
                             Price = "$10.50",
                             SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "94% (4.2K)",
@@ -163,7 +157,6 @@ namespace WebAPI.Migrations
                             Duration = "160 hours",
                             ImageUrl = "https://localhost:7279/images/blender.svg",
                             Instructor = "Ralph Edwards",
-                            IsBestSeller = false,
                             Price = "$18.99",
                             SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "92% (3.1K)",
@@ -177,7 +170,6 @@ namespace WebAPI.Migrations
                             Duration = "100 hours",
                             ImageUrl = "https://localhost:7279/images/ultimate.svg",
                             Instructor = "Albert Flores",
-                            IsBestSeller = false,
                             Price = "$12.99",
                             SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "98% (2.7K)",
@@ -191,7 +183,6 @@ namespace WebAPI.Migrations
                             Duration = "160 hours",
                             ImageUrl = "https://localhost:7044/images/jmeter.svg",
                             Instructor = "Jenny Wilson",
-                            IsBestSeller = false,
                             Price = "$14.50",
                             SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "92% (3.1K)",

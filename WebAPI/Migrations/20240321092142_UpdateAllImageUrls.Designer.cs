@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebbAPI.Data;
 
@@ -10,9 +11,11 @@ using WebbAPI.Data;
 namespace WebAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240321092142_UpdateAllImageUrls")]
+    partial class UpdateAllImageUrls
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -41,14 +44,7 @@ namespace WebAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsBestSeller")
-                        .HasColumnType("bit");
-
                     b.Property<string>("Price")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("SImage")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -57,14 +53,6 @@ namespace WebAPI.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("durationImage")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("satisfactionImage")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -79,13 +67,9 @@ namespace WebAPI.Migrations
                             Duration = "220 hours",
                             ImageUrl = "https://localhost:7279/images/fullstack.svg",
                             Instructor = "Robert Fox",
-                            IsBestSeller = true,
                             Price = "$12.50",
-                            SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "94% (4.2K)",
-                            Title = "Fullstack Web Developer Course from Scratch",
-                            durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                            satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                            Title = "Fullstack Web Developer Course from Scratch"
                         },
                         new
                         {
@@ -93,13 +77,9 @@ namespace WebAPI.Migrations
                             Duration = "160 hours",
                             ImageUrl = "https://localhost:7279/images/htmlcss.svg",
                             Instructor = "Jenny Wilson & Marvin McKinney",
-                            IsBestSeller = false,
                             Price = "$15.99",
-                            SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "92% (3.1K)",
-                            Title = "HTML, CSS, JavaScript Web Developer",
-                            durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                            satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                            Title = "HTML, CSS, JavaScript Web Developer"
                         },
                         new
                         {
@@ -107,13 +87,9 @@ namespace WebAPI.Migrations
                             Duration = "100 hours",
                             ImageUrl = "https://localhost:7279/images/thecomplete.svg",
                             Instructor = "Albert Flores",
-                            IsBestSeller = false,
                             Price = "$9.99",
-                            SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "98% (2.7K)",
-                            Title = "The Complete Front-End Web Development Course",
-                            durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                            satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                            Title = "The Complete Front-End Web Development Course"
                         },
                         new
                         {
@@ -121,13 +97,9 @@ namespace WebAPI.Migrations
                             Duration = "160 hours",
                             ImageUrl = "https://localhost:7279/images/iosswift.svg",
                             Instructor = "Marvin McKinney",
-                            IsBestSeller = false,
                             Price = "$15.99",
-                            SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "92% (3.1K)",
-                            Title = "iOS & Swift - The Complete iOS App Development Course",
-                            durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                            satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                            Title = "iOS & Swift - The Complete iOS App Development Course"
                         },
                         new
                         {
@@ -135,13 +107,9 @@ namespace WebAPI.Migrations
                             Duration = "160 hours",
                             ImageUrl = "https://localhost:7279/images/datascience.svg",
                             Instructor = "Esther Howard",
-                            IsBestSeller = true,
                             Price = "$11.20",
-                            SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "92% (3.1K)",
-                            Title = "Data Science & Machine Learning with Python",
-                            durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                            satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                            Title = "Data Science & Machine Learning with Python"
                         },
                         new
                         {
@@ -149,13 +117,9 @@ namespace WebAPI.Migrations
                             Duration = "220 hours",
                             ImageUrl = "https://localhost:7279/images/creativecss.svg",
                             Instructor = "Robert Fox",
-                            IsBestSeller = false,
                             Price = "$10.50",
-                            SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "94% (4.2K)",
-                            Title = "Creative CSS Drawing Course: Make Art With CSS",
-                            durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                            satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                            Title = "Creative CSS Drawing Course: Make Art With CSS"
                         },
                         new
                         {
@@ -163,13 +127,9 @@ namespace WebAPI.Migrations
                             Duration = "160 hours",
                             ImageUrl = "https://localhost:7279/images/blender.svg",
                             Instructor = "Ralph Edwards",
-                            IsBestSeller = false,
                             Price = "$18.99",
-                            SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "92% (3.1K)",
-                            Title = "Blender Character Creator v2.0 for Video Games Design",
-                            durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                            satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                            Title = "Blender Character Creator v2.0 for Video Games Design"
                         },
                         new
                         {
@@ -177,13 +137,9 @@ namespace WebAPI.Migrations
                             Duration = "100 hours",
                             ImageUrl = "https://localhost:7279/images/ultimate.svg",
                             Instructor = "Albert Flores",
-                            IsBestSeller = false,
                             Price = "$12.99",
-                            SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "98% (2.7K)",
-                            Title = "The Ultimate Guide to 2D Mobile Game Development with Unity",
-                            durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                            satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                            Title = "The Ultimate Guide to 2D Mobile Game Development with Unity"
                         },
                         new
                         {
@@ -191,13 +147,9 @@ namespace WebAPI.Migrations
                             Duration = "160 hours",
                             ImageUrl = "https://localhost:7044/images/jmeter.svg",
                             Instructor = "Jenny Wilson",
-                            IsBestSeller = false,
                             Price = "$14.50",
-                            SImage = "https://localhost:7279/images/S.svg",
                             SatisfactionRate = "92% (3.1K)",
-                            Title = "Learn JMETER from Scratch on Live Apps-Performance Testing",
-                            durationImage = "https://localhost:7279/images/bx-time-five.svg",
-                            satisfactionImage = "https://localhost:7279/images/bx-like.svg"
+                            Title = "Learn JMETER from Scratch on Live Apps-Performance Testing"
                         });
                 });
 
