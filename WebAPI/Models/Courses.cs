@@ -4,17 +4,17 @@
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public string Instructor { get; set; } // Nytt fält
-        public string Price { get; set; }      // Nytt fält
-        public string Duration { get; set; }   // Nytt fält
-        public string SatisfactionRate { get; set; } // Nytt fält
-        public string ImageUrl { get; set; } // Nytt fält för bildlänk
-        public string SImage { get; set; } // Add this property
-        public string durationImage { get; set; } // Add this property
-        public string satisfactionImage { get; set; } // Add this property
-        public bool IsBestSeller { get; set; } // Add this property
-        public bool IsOnSale { get; set; } // Indicates if the course is on sale
-        public string OriginalPrice { get; set; } // The original price before the sale
-        public string SalePrice { get; set; } // The sale price
+        public string Instructor { get; set; } 
+        public string Price { get; set; }      
+        public string Duration { get; set; }
+        public string SatisfactionRate { get; set; } 
+        public string ImageUrl { get; set; } 
+        public string SImage { get; set; } 
+        public string durationImage { get; set; } 
+        public string satisfactionImage { get; set; } 
+        public bool IsBestSeller { get; set; } 
+        public bool IsOnSale { get; set; } 
+        public string OriginalPrice { get; set; } 
+        public string SalePrice { get; set; } 
     }
 }
